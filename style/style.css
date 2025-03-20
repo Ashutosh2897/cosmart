@@ -64,11 +64,12 @@ a{
     transition: all 0.3s ease-in-out;
     z-index: 100;
     width: 100%;
-    top: 0;
+    top: 0px;
 }
 .header.sticky {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
+
 .header-inner-wrapper {
     display: flex;
     align-items: center;
@@ -390,6 +391,90 @@ a{
     object-fit: cover;
 }
 
+/* ========================reviewer==================== */
+
+.main-wrapper .reviewer {
+    display: flex;
+    margin-bottom: 7.25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* reviewer IMAGE */
+
+.reviewer .review-img-wrapper {
+    width: 45%;
+    height: 42.75rem;
+}
+.reviewer .review-img-wrapper .review-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* reviewer CONTENT */
+.reviewer .reviewer-content {
+    width: 55%;
+    margin-left: 4rem;
+}
+
+.reviewer .reviewer-content .reviewer-heading {
+    font-size: 2.5rem;
+}
+/* RATING STAR */
+.reviewer .reviewer-content .star-rating {
+    margin-top: 0.625rem;
+}
+
+.reviewer .reviewer-content .star-rating .star-icon {
+    color: #fec046;
+    padding: 0.375rem;
+    font-size: 1.5rem;
+}
+
+.reviewer .reviewer-content .reviewer-description {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.reviewer .reviewer-content .reviewer-quote-left {
+    color: #70b587;
+}
+
+.reviewer .reviewer-content .reviewer-quote-right {
+    color: #70b587;
+}
+
+/* reviewer NAME */
+.reviewer .reviewer-content .reviewer-name {
+    font-size: 2rem;
+}
+
+.reviewer .reviewer-content .reviewer-designation {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    margin-top: 0.375rem;
+}
+
+/* PROFILE ARROW btn */
+
+.reviewer .reviewer-content .reviewer-arrow-wrapper {
+    margin-top: 1rem;
+}
+
+.reviewer .reviewer-content .reviewer-left-icon {
+    color: #70b587;
+    font-size: 2.5rem;
+    margin-right: 1.75rem;
+}
+
+.reviewer .reviewer-content .reviewer-right-icon {
+    color: #70b587;
+    font-size: 2.5rem;
+}
 /* ============media querry============ */
 
 @media screen and (max-width: 1199px) {
@@ -470,6 +555,10 @@ a{
 
     .main-wrapper .records .records-numbers {
         font-size: 2.5rem;
+    }
+
+    .main-wrapper .reviewer{
+        margin-bottom: 6rem;
     }
 }
 
@@ -557,4 +646,26 @@ a{
     .product-profile .product-profile-content .shop-now-wrapper{
         margin-top: 2rem;
     }
+
+    .main-wrapper .reviewer {
+        align-items: flex-start;
+        margin-bottom: 4rem;
+    }
+    .reviewer .review-img-wrapper{
+        height: 30rem;
+        margin-top: 3.2rem;
+    }
+    .reviewer .reviewer-content{
+        margin-left: 2rem;
+    }
+    .reviewer .reviewer-content .reviewer-heading{
+        font-size: 2rem;
+    }
+    .reviewer .reviewer-content .reviewer-description{
+        text-align: justify;
+    }
+    .reviewer .reviewer-content .reviewer-name{
+        font-size: 1.8rem;
+    }
+    
 }
